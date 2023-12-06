@@ -15,25 +15,29 @@
 my_string = input("Please add a string with 15 characters: \n")
 
 while len(my_string) < 15:
-    my_string *= 2
-    if len(my_string) >= 15:
-        print(my_string)
-        my_list = list(my_string)
-        print(my_list)
-        last_5_digits = my_list[-5:]
-        print(last_5_digits)
-        mirror_list = my_list[::-1]
-        print(mirror_list)
-        even_index_list = my_list[2::2]
-        print(even_index_list)
-        new_list = last_5_digits
-        new_list.extend(my_list)
-        print(new_list)
-        sliced_list = my_list[2:-2]
-        print(sliced_list)
-    else:
+    if len(my_string) == 0:
         print("You didn't add a string with 15 characters")
         break
+    else:
+        my_string *= 2
+
+if len(my_string) >= 15:
+    print(my_string)
+    my_list = list(my_string)
+    print(my_list)
+    last_5_digits = my_list[-5:]
+    print(last_5_digits)
+    mirror_list = my_list[::-1]
+    print(mirror_list)
+    even_index_list = my_list[2::2]
+    print(even_index_list)
+    new_list = last_5_digits
+    new_list.extend(my_list)
+    print(new_list)
+    sliced_list = my_list[2:-2]
+    print(sliced_list)
+
+
 
 
 
