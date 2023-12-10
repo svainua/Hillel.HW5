@@ -8,8 +8,8 @@
 
 import random
 
-n_number = int(input("Please enter the number more tha 5: \n"))
-m_number = int(input("Please enter the number more tha 5: \n"))
+n_number = int(input("Please enter the number more than 5: \n"))
+m_number = int(input("Please enter the number more than 5: \n"))
 
 my_list = []
 
