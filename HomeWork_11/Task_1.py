@@ -14,11 +14,11 @@
 
 import math
 
-a = 2
+
 a_list = [2, 4, 6, 8]
 b_list = [3, 5, 7, 9]
 
-c_1 = list(map(lambda b: round(math.sqrt(a**2 + b**2), 2), b_list))
+c_1 = list(map(lambda b, a=2: round(math.sqrt(a**2 + b**2), 2), b_list))
 print(f"Here is a list of hypotenuses using only one parameter 'a' and a list of 'b': \n{c_1}")
 
 print()
