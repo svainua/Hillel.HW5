@@ -41,5 +41,17 @@ else:
     print("You don't have a pair")
 
 diagonal_positions_list = []
+for diag_pos in chess_queens:
+    new_internal_list = []
+    diagonal_positions_list.append(new_internal_list)
+    for diag_tup in diag_pos:
+        start_x_pos = diag_tup[0]
+
+
+
+
+
+
+
 
 
