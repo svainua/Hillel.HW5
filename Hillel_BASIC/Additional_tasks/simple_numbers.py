@@ -18,6 +18,6 @@ def simple_numbers(upper_limit):
     return snumbers
 
 
-print(simple_numbers(10))
+print(simple_numbers(100))
 
 

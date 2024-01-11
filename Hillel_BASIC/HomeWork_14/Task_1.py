@@ -17,6 +17,7 @@
 
 import random
 
+
 def show(length):
     def sort(total, big_matrix):
 
