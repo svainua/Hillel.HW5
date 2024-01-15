@@ -59,5 +59,5 @@ def show(length):
     print(*[f"{num: >4}" for num in summ_list])
 
 
-show(6)
+show(10)
 
