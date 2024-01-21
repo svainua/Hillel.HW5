@@ -4,5 +4,5 @@ def foo(name, middle_name, last_name):
 def baz(num: int) -> str:
     pass
 
-print("Hello")
+print("Hello1")
 
