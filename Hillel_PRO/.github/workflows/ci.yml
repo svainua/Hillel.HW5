@@ -13,6 +13,6 @@ jobs:
       - name: Install dependencies
         run: pip install black ruff isort
       - name: Run formatters
-        run: python3 -m black --check . && python3 -m isort --check . 
+        run: python -m black --check . && python3 -m isort --check . 
       - name: Run linter
-        run: python3 -m ruff .   
+        run: python -m ruff .   
