@@ -35,5 +35,3 @@ def check_my_list(function):
 
 
 check_my_list(make_a_list)
-
-

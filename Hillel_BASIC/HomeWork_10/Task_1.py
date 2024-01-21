@@ -20,5 +20,3 @@ def check_pair(my_list, number):
 
 print(check_pair([1, 2, 3, 4, 5], 9))
 print(check_pair([1, 2, 3, 4], 9))
-
-

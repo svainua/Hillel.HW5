@@ -1,8 +1,6 @@
-
-
 chess_queens = [(2, 3)]
 
-#chess_queens = [(2, 4), (3, 6), (4, 7), (5, 1), (6, 2), (7, 3), (1, 7), (0, 2)]
+# chess_queens = [(2, 4), (3, 6), (4, 7), (5, 1), (6, 2), (7, 3), (1, 7), (0, 2)]
 my_list = []
 
 for line in range(8):
@@ -46,12 +44,3 @@ for diag_pos in chess_queens:
     diagonal_positions_list.append(new_internal_list)
     for diag_tup in diag_pos:
         start_x_pos = diag_tup[0]
-
-
-
-
-
-
-
-
-

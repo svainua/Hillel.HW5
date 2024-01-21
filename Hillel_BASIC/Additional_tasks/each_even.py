@@ -13,4 +13,3 @@ def each_even(nums):
 
 
 print(each_even(numbers))
-

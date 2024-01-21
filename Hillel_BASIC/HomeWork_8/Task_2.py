@@ -1,5 +1,4 @@
-
-data ="""id,name,segment,state,city
+data = """id,name,segment,state,city
 CG-12520,Claire Gute,Consumer,Kentucky,Henderson
 DV-13045,Darrin Van Huff,Corporate,California,Los Angeles
 SO-20335,Sean O'Donnell,Consumer,Florida,Fort Lauderdale
@@ -22,8 +21,6 @@ my_list = data.split("\n")
 
 for data in my_list:
     new_data = data.split(",")
-    print(f"{new_data[0]: >10} {new_data[1]: >20} {new_data[2]: >20} {new_data[3]: >20} {new_data[4]: >20}")
-
-
-
-
+    print(
+        f"{new_data[0]: >10} {new_data[1]: >20} {new_data[2]: >20} {new_data[3]: >20} {new_data[4]: >20}"
+    )

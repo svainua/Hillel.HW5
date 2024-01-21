@@ -34,5 +34,3 @@ for change in my_list:
 
 for p in range(n_number):
     print(*my_list[p], end="\n")
-
-

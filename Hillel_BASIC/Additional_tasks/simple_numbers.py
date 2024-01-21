@@ -5,11 +5,12 @@
 #
 # simple_numbers - повертає список простих чисел з диапазону
 
+
 def simple_numbers(upper_limit):
     snumbers = []
     for i in range(2, upper_limit + 1):
         is_prime = True
-        for num in range(2, int(i ** 0.5) + 1):
+        for num in range(2, int(i**0.5) + 1):
             if i % num == 0:
                 is_prime = False
                 break
@@ -19,5 +20,3 @@ def simple_numbers(upper_limit):
 
 
 print(simple_numbers(100))
-
-

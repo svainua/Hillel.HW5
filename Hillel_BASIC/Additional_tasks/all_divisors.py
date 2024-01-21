@@ -22,4 +22,3 @@ def all_divisors(number):
 
 
 print(all_divisors(0))
-

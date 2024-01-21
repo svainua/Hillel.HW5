@@ -16,14 +16,3 @@ try:
         print("Wrong number")
 except ValueError:
     print("Wrong enter, please use integers")
-
-
-
-
-
-
-
-
-
-
-

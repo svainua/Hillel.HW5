@@ -5,7 +5,7 @@
 # підрахувати і вивести репорт у вигляді таблички:
 # скільки окремо продано в режимах : Standard, Second , First
 
-data = '''id,order_date,ship_mode,customer_id,sales
+data = """id,order_date,ship_mode,customer_id,sales
 100006,2014-09-07,Standard,DK-13375,377.97
 100090,2014-07-08,Standard,EB-13705,699.192
 100293,2014-03-14,Standard,NF-18475,91.056
@@ -33,7 +33,7 @@ data = '''id,order_date,ship_mode,customer_id,sales
 101602,2014-12-15,First,MC-18100,803.96
 101770,2014-03-31,Standard,KB-16240,1.869
 101833,2014-11-17,Second,FG-14260,34.44
-101931,2014-10-28,First,TS-21370,1252.602'''
+101931,2014-10-28,First,TS-21370,1252.602"""
 
 my_list = data.split("\n")
 
@@ -51,13 +51,10 @@ for item in new_list:
     elif "Second" in item:
         second_sales += float(item[4])
 
-final_table = [["Standard Sales", "First Sales", "Second Sales"], [round(standard_sales, 3), round(first_sales, 3), round(second_sales, 3)]]
+final_table = [
+    ["Standard Sales", "First Sales", "Second Sales"],
+    [round(standard_sales, 3), round(first_sales, 3), round(second_sales, 3)],
+]
 
 for row in final_table:
     print(f"{row[0]: >15} {row[1]: >15} {row[2]: >15}")
-
-
-
-
-
-

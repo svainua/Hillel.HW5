@@ -9,10 +9,3 @@ for r in range(rows):
     else:
         result = "1" + "0" * r
         print(str(r).ljust(len(str(rows))), result.rjust(rows))
-
-
-
-
-
-
-

@@ -15,12 +15,7 @@ import random
 
 
 def matrix3x3():
-
-    matrix = [
-        ["", "", ""],
-        ["", "", ""],
-        ["", "", ""]
-    ]
+    matrix = [["", "", ""], ["", "", ""], ["", "", ""]]
 
     matrix[0][0] = random.randint(10, 30)
     matrix[0][2] = random.randint(10, 30)
@@ -34,4 +29,3 @@ def matrix3x3():
 
 
 matrix3x3()
-

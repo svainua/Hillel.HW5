@@ -29,7 +29,9 @@ for diagonal_sum in range(number):
     diagonal_left_sum += digit
     diagonal_step_left += 1
 
-print(f"The sum of diagonal starting from up left till right down is: {diagonal_left_sum}")
+print(
+    f"The sum of diagonal starting from up left till right down is: {diagonal_left_sum}"
+)
 
 diagonal_step_right_y = 0
 diagonal_step_right_x = number - 1
@@ -41,25 +43,11 @@ for diagonal_sum in range(number):
     diagonal_step_right_y += 1
     diagonal_step_right_x -= 1
 
-print(f"The sum of diagonal starting from up right till left down is: {diagonal_right_sum}")
+print(
+    f"The sum of diagonal starting from up right till left down is: {diagonal_right_sum}"
+)
 
 central_number_pos = int((number - 1) / 2)
 central_number = my_list[central_number_pos][central_number_pos]
 
 print(f"Central number is: {central_number}")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

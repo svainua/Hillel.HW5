@@ -6,6 +6,7 @@
 # 100 то результат 1
 # 234 то результат 432
 
+
 #
 def num_reverse(num):
     i = 3
@@ -28,5 +29,3 @@ print(num_reverse(123))
 # revers_n = int(''.join(map(str, revers_l)))
 #
 # print(revers_n)
-
-

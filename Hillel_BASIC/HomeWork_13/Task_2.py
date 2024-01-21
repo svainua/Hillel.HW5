@@ -1,6 +1,7 @@
 # Потрібно реалізувати функцію longest_words(file), яка виводить слово, що має максимальну довжину(або список слів, якщо таких кілька).
 # Так як додаткові символи показувати нам не потрібно(перенесення рядків), Виводити їх на друк не потрібно.
 
+
 def longest_words(file):
     file = file.split()
     longest_word_list = [max(file, key=len)]
@@ -14,5 +15,3 @@ def longest_words(file):
 with open("article.txt", mode="r") as data:
     content = data.read()
     print(longest_words(content))
-
-

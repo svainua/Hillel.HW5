@@ -9,4 +9,3 @@ with open("new.txt", mode="a") as file:
             should_continue = False
         else:
             file.write(add_info + "\n")
-

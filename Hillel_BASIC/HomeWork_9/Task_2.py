@@ -12,4 +12,3 @@ for n in my_dict:
     value_sum *= my_dict[n]
 
 print(value_sum)
-

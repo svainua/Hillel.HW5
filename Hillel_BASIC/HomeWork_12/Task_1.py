@@ -41,7 +41,9 @@ def check_password(func):
                 print(f"Your password is {password}. It meets the requirements.")
 
         else:
-            print("Oooops, please try again in accordance to the requirements of the password")
+            print(
+                "Oooops, please try again in accordance to the requirements of the password"
+            )
             wrapper()
 
     return wrapper
@@ -49,8 +51,12 @@ def check_password(func):
 
 @check_password
 def get_password():
-    password = (input("Please insert the password without spaces,"
-                     " TAB. With at least 1 integer, 1 special symbol, not less than 8 symbols: \n")).lower()
+    password = (
+        input(
+            "Please insert the password without spaces,"
+            " TAB. With at least 1 integer, 1 special symbol, not less than 8 symbols: \n"
+        )
+    ).lower()
     if " " in password or "\t" in password:
         return None
     else:

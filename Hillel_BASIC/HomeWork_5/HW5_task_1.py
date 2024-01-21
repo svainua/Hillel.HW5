@@ -36,12 +36,3 @@ if len(my_string) >= 15:
     print(new_list)
     sliced_list = my_list[2:-2]
     print(sliced_list)
-
-
-
-
-
-
-
-
-

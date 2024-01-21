@@ -8,4 +8,3 @@ list_2 = [3, 5, 7, 9]
 my_dict = {key: value for key, value in zip(list_1, list_2)}
 
 print(my_dict)
-

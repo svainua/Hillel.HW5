@@ -33,6 +33,3 @@ for n in matrix:
 
 for line in matrix:
     print(line)
-
-
-

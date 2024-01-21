@@ -20,7 +20,9 @@ for month in range(1, year_1 + 1):
     month_payment = credit_sum / year_1
     payment = int(month_payment + body_of_credit_1 * interest_rate_2_years)
     body_of_credit_1 -= month_payment
-    print(f"In month # {month} you should pay {payment} USD with {int(payment - month_payment)} USD as %")
+    print(
+        f"In month # {month} you should pay {payment} USD with {int(payment - month_payment)} USD as %"
+    )
 
 print()
 
@@ -32,13 +34,13 @@ for month in range(1, year_5 + 1):
         payment = int(month_payment + body_of_credit_5 * interest_rate_2_years)
         body_of_credit_5 -= month_payment
         month_count += 1
-        print(f"In month # {month} you should pay {payment} with {int(payment - month_payment)} USD as %")
+        print(
+            f"In month # {month} you should pay {payment} with {int(payment - month_payment)} USD as %"
+        )
     else:
         payment = int(month_payment + body_of_credit_5 * interest_rate_3plus_years)
         body_of_credit_5 -= month_payment
         month_count += 1
-        print(f"In month # {month} you should pay {payment} with {int(payment - month_payment)} USD as %")
-
-
-
-
+        print(
+            f"In month # {month} you should pay {payment} with {int(payment - month_payment)} USD as %"
+        )

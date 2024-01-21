@@ -8,7 +8,7 @@ import random
 def simple_numbers(start, stop):
     for i in range(start, stop + 1):
         is_prime = True
-        for num in range(2, int(i ** 0.5) + 1):
+        for num in range(2, int(i**0.5) + 1):
             if i % num == 0:
                 is_prime = False
                 break
@@ -21,5 +21,3 @@ z = random.randint(20, 100)
 
 for n in simple_numbers(n, z):
     print(n, end=" ")
-
-

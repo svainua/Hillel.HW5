@@ -20,7 +20,6 @@
 squares = (e**2 for e in range(1, 10, 2))
 
 
-
 def squares2():
     print("Generator is working...")
     for e in range(1, 10, 2):
@@ -37,10 +36,3 @@ print("=" * 20)
 
 for i in gen2:
     print(i)
-
-
-
-
-
-
-

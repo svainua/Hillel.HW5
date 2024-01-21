@@ -20,7 +20,6 @@ import random
 
 def show(length):
     def sort(total, big_matrix):
-
         for i in range(len(big_matrix[0])):
             for j in range(0, len(big_matrix[0]) - i - 1):
                 if total[j] > total[j + 1]:
@@ -33,14 +32,22 @@ def show(length):
                 for i in range(len(big_matrix) - 1):
                     for k in range(i, len(big_matrix)):
                         if big_matrix[k][j] > big_matrix[i][j]:
-                            big_matrix[k][j], big_matrix[i][j] = big_matrix[i][j], big_matrix[k][j]
+                            big_matrix[k][j], big_matrix[i][j] = (
+                                big_matrix[i][j],
+                                big_matrix[k][j],
+                            )
             else:
                 for i in range(len(big_matrix) - 1):
                     for k in range(i, len(big_matrix)):
                         if big_matrix[k][j] < big_matrix[i][j]:
-                            big_matrix[k][j], big_matrix[i][j] = big_matrix[i][j], big_matrix[k][j]
+                            big_matrix[k][j], big_matrix[i][j] = (
+                                big_matrix[i][j],
+                                big_matrix[k][j],
+                            )
 
-    matrix = [[random.randint(1, 50) for item in range(length)] for item in range(length)]
+    matrix = [
+        [random.randint(1, 50) for item in range(length)] for item in range(length)
+    ]
     summ_list = [sum(matrix[j][i] for j in range(length)) for i in range(length)]
 
     print("The Matrix before sorting:")
@@ -60,4 +67,3 @@ def show(length):
 
 
 show(10)
-

@@ -9,7 +9,7 @@
 status = True
 chess_queens = [(0, 7), (1, 6), (2, 5), (3, 4), (4, 3), (5, 2), (6, 1), (7, 0)]
 
-#chess_queens = [(2, 4), (3, 6), (4, 7), (5, 1), (6, 2), (7, 3), (1, 7), (0, 2)]
+# chess_queens = [(2, 4), (3, 6), (4, 7), (5, 1), (6, 2), (7, 3), (1, 7), (0, 2)]
 my_list = []
 
 for line in range(8):
@@ -45,18 +45,3 @@ if len(chess_queens) > len(x_list) or len(chess_queens) > len(my_list):
     print("You have a pair")
 else:
     print("You don't have a pair")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
