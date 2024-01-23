@@ -22,6 +22,4 @@ def make_odd_list(num: int) -> list:
     return my_list
 
 
-# number = int(input("Please choose the number: \n"))
-# result = make_odd_list(number)
-# print(result)
+
